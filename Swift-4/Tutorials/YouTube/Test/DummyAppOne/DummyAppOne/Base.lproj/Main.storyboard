@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DummyAppOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="france" translatesAutoresizingMaskIntoConstraints="NO" id="4Ze-c0-aF6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U3O-3j-yIs">
+                                <rect key="frame" x="0.0" y="568.33333333333337" width="375" height="243.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Liberté guidant le peuple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dan-Ze-JJT">
+                                        <rect key="frame" x="20" y="20.666666666666629" width="335" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-rN-89v">
+                                        <rect key="frame" x="20" y="59.666666666666622" width="335" height="81.333333333333314"/>
+                                        <string key="text">Liberty Leading the People is a painting by Eugène Delacroix commemorating the July Revolution of 1830, which toppled King Charles X of France.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BeJ-rN-89v" firstAttribute="leading" secondItem="U3O-3j-yIs" secondAttribute="leading" constant="20" id="Ebb-98-jZt"/>
+                                    <constraint firstAttribute="trailing" secondItem="BeJ-rN-89v" secondAttribute="trailing" constant="20" id="GGG-4C-Iqc"/>
+                                    <constraint firstItem="Dan-Ze-JJT" firstAttribute="leading" secondItem="U3O-3j-yIs" secondAttribute="leading" constant="20" id="KPr-fS-H1e"/>
+                                    <constraint firstItem="Dan-Ze-JJT" firstAttribute="top" secondItem="U3O-3j-yIs" secondAttribute="top" constant="20" id="cHC-Zg-HT5"/>
+                                    <constraint firstItem="BeJ-rN-89v" firstAttribute="top" secondItem="Dan-Ze-JJT" secondAttribute="bottom" constant="10" id="ekc-dJ-vDT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dan-Ze-JJT" secondAttribute="trailing" constant="20" id="fTU-wH-Goq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Ze-c0-aF6" secondAttribute="trailing" id="0tp-wd-whd"/>
+                            <constraint firstAttribute="bottom" secondItem="U3O-3j-yIs" secondAttribute="bottom" id="7th-bd-6cY"/>
+                            <constraint firstItem="U3O-3j-yIs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EEu-2Z-ghb"/>
+                            <constraint firstAttribute="trailing" secondItem="U3O-3j-yIs" secondAttribute="trailing" id="iJ7-GZ-0qd"/>
+                            <constraint firstItem="4Ze-c0-aF6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jfR-bn-qvi"/>
+                            <constraint firstAttribute="bottom" secondItem="4Ze-c0-aF6" secondAttribute="bottom" id="q9g-JV-tGb"/>
+                            <constraint firstItem="4Ze-c0-aF6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wyl-0p-u5Y"/>
+                            <constraint firstItem="U3O-3j-yIs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="zoU-eo-1jx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="france" width="1687" height="1340"/>
+    </resources>
+</document>
