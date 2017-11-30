@@ -26,13 +26,13 @@
                                 <rect key="frame" x="0.0" y="568.33333333333337" width="375" height="243.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La Liberté guidant le peuple" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dan-Ze-JJT">
-                                        <rect key="frame" x="20" y="20.666666666666629" width="335" height="29"/>
+                                        <rect key="frame" x="20" y="20" width="335" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-rN-89v">
-                                        <rect key="frame" x="20" y="59.666666666666622" width="335" height="81.333333333333314"/>
+                                        <rect key="frame" x="20" y="69" width="335" height="81.333333333333314"/>
                                         <string key="text">Liberty Leading the People is a painting by Eugène Delacroix commemorating the July Revolution of 1830, which toppled King Charles X of France.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -44,9 +44,9 @@
                                     <constraint firstItem="BeJ-rN-89v" firstAttribute="leading" secondItem="U3O-3j-yIs" secondAttribute="leading" constant="20" id="Ebb-98-jZt"/>
                                     <constraint firstAttribute="trailing" secondItem="BeJ-rN-89v" secondAttribute="trailing" constant="20" id="GGG-4C-Iqc"/>
                                     <constraint firstItem="Dan-Ze-JJT" firstAttribute="leading" secondItem="U3O-3j-yIs" secondAttribute="leading" constant="20" id="KPr-fS-H1e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dan-Ze-JJT" secondAttribute="trailing" constant="20" id="Wg2-8P-bBd"/>
                                     <constraint firstItem="Dan-Ze-JJT" firstAttribute="top" secondItem="U3O-3j-yIs" secondAttribute="top" constant="20" id="cHC-Zg-HT5"/>
-                                    <constraint firstItem="BeJ-rN-89v" firstAttribute="top" secondItem="Dan-Ze-JJT" secondAttribute="bottom" constant="10" id="ekc-dJ-vDT"/>
-                                    <constraint firstAttribute="trailing" secondItem="Dan-Ze-JJT" secondAttribute="trailing" constant="20" id="fTU-wH-Goq"/>
+                                    <constraint firstItem="BeJ-rN-89v" firstAttribute="top" secondItem="Dan-Ze-JJT" secondAttribute="bottom" constant="20" id="ekc-dJ-vDT"/>
                                 </constraints>
                             </view>
                         </subviews>
