@@ -1,8 +1,5 @@
-//: Playground - noun: a place where people can play
-
+//: STRINGS, FUNCTIONS && CLASSES - THE BASICS
 import UIKit
-
-var str = "Hello, playground"
 
 // Explicitly typed variables
 let name: String = "Lamar"
@@ -38,6 +35,39 @@ func multiplyNums(_ num1: Int, num2: Int) -> Int {
     return num1 * num2
 }
 multiplyNums(5, num2: 9)
+
+
+
+
+// Understanding Classes in Swift
+class Spaceship {
+    
+    var fuelLevel = 100
+    func cruise() {
+        // Method instructions here...
+    }
+    
+    func thrust() {
+        // And more here... 🚀
+    }
+    
+}
+
+// Instance of class or object stemming from the Spaceship class.
+let myShip: Spaceship = Spaceship() // Of type Spaceship. Not need explicit typed out... just for show
+myShip.thrust()
+myShip.cruise()
+myShip.fuelLevel = 10
+print(myShip.fuelLevel)
+
+
+
+
+
+
+
+
+
 
 
 
