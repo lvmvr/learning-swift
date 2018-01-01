@@ -170,3 +170,130 @@ greet("John", on: "Wednesday")
 // NOTE: The 'on' is the custom parameter name, separated with space. Try changing it!
 //Use the "_" for no argument name.
 //Parameter name is still used with "_", not sure why. 🤔 Just not needed when using argument in function call.
+
+// Functions returning multiple/ Tuple values
+// Takes in array as parameter, returns multiple values as a Tuple - all integers
+func calculateStatistics(scores: [Int]) -> (min: Int, max: Int, sum: Int) {
+    var min = scores[0]
+    var max = scores[0]
+    var sum = 0
+    
+    for score in scores {
+        if score > max {
+            max = sum
+        } else if score < min {
+            min = sum
+        }
+        sum += score
+    }
+    
+    return (min, max, sum)
+}
+
+let statistics = calculateStatistics(scores: [5, 3, 100, 3, 9])
+
+print(statistics.sum)
+print(statistics.2)
+
+// Access nested functions within a function
+
+func returnFifteen() -> Int {
+    var y = 10
+    
+    func add() {
+        y += 5
+    }
+    add()
+    return y
+}
+returnFifteen()
+
+// Return a function within a function
+// Functions are a first-class type...?
+
+// Note how makeIncrement holds no params
+func makeIncrementer() -> ( (Int) -> Int ) {
+    func addOne(number: Int) -> Int {
+        return 1 + number
+    }
+    // Notice how we do not call the addOne func, only return it.
+    return addOne
+}
+
+// Store the value in a var
+var increment = makeIncrementer()
+
+// Now we call the func stored in the variable.
+increment(19)
+
+
+
+// Have a function take another function as it's argument
+func hasAnyMatches(list: [Int], condition: (Int) -> Bool) -> Bool {
+    for item in list {
+        if condition(item) {
+            return true
+        }
+    }
+    return false
+}
+
+
+func lessThanTen(number: Int) -> Bool {
+    return number < 10
+}
+
+var numbers = [20, 19, 7, 12]
+hasAnyMatches(list: numbers, condition: lessThanTen)
+
+// Closures are a special case of functions
+// Have access to vars inside and outside scope
+// Are called w/o a name, just "{...}"
+
+
+// Understand that the closure plays as the callback, similar to JS
+// Use the "in" keyword to seperate func body from param and return type
+numbers.map({ (number: Int) -> Int in
+    let result = 3 * number
+    return result
+})
+
+
+// CHALLENGE: return 0 if number is odd...
+var myNumbers = [1, 3, 2, 4]
+
+// Notice the closure inside...
+myNumbers.map({ (number: Int) -> Int in
+    if number % 2 != 0 {
+        return 0
+    }
+    let result = 3 * number
+    return result
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
