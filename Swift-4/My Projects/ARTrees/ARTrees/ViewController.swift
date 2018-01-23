@@ -56,6 +56,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.didReceiveMemoryWarning()
         // Release any cached data, images, etc that aren't in use.
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else { return }
+        let results = sceneView.hitTest(touch.location(in: sceneView), types: ARHitTestResult.ResultType.featurePoint)
+        guard let hitFeature = results.last else { return }
+        let hitTransform = SCNMatrix4(hitFeature.worldTransform)
+        let hitPosition = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
+        treeNode?.position = hitPosition
+        
+        // Clone ARTrees
+        let treeClone = treeNode!.clone()
+        treeClone.position = hitPosition
+        sceneView.scene.rootNode.addChildNode(treeClone)
+    }
 
     // MARK: - ARSCNViewDelegate
     

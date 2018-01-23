@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		804DF2201FFAAADD00312051 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804DF21F1FFAAADD00312051 /* AppDelegate.swift */; };
-		804DF2221FFAAADD00312051 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 804DF2211FFAAADD00312051 /* art.scnassets */; };
-		804DF2241FFAAADD00312051 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804DF2231FFAAADD00312051 /* ViewController.swift */; };
-		804DF2271FFAAADD00312051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804DF2251FFAAADD00312051 /* Main.storyboard */; };
-		804DF2291FFAAADD00312051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 804DF2281FFAAADD00312051 /* Assets.xcassets */; };
-		804DF22C1FFAAADD00312051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 804DF22A1FFAAADD00312051 /* LaunchScreen.storyboard */; };
+		80641DA3200D16070074105E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80641DA2200D16070074105E /* AppDelegate.swift */; };
+		80641DA5200D16070074105E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80641DA4200D16070074105E /* ViewController.swift */; };
+		80641DA8200D16070074105E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80641DA6200D16070074105E /* Main.storyboard */; };
+		80641DAA200D16070074105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80641DA9200D16070074105E /* Assets.xcassets */; };
+		80641DAD200D16070074105E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80641DAB200D16070074105E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		804DF21C1FFAAADD00312051 /* ARTrees.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARTrees.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		804DF21F1FFAAADD00312051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		804DF2211FFAAADD00312051 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		804DF2231FFAAADD00312051 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		804DF2261FFAAADD00312051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		804DF2281FFAAADD00312051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		804DF22B1FFAAADD00312051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		804DF22D1FFAAADD00312051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80641D9F200D16070074105E /* Magic 8 Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8 Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80641DA2200D16070074105E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80641DA4200D16070074105E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80641DA7200D16070074105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80641DA9200D16070074105E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80641DAC200D16070074105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80641DAE200D16070074105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		804DF2191FFAAADD00312051 /* Frameworks */ = {
+		80641D9C200D16070074105E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		804DF2131FFAAADC00312051 = {
+		80641D96200D16070074105E = {
 			isa = PBXGroup;
 			children = (
-				804DF21E1FFAAADD00312051 /* ARTrees */,
-				804DF21D1FFAAADD00312051 /* Products */,
+				80641DA1200D16070074105E /* Magic 8 Ball */,
+				80641DA0200D16070074105E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		804DF21D1FFAAADD00312051 /* Products */ = {
+		80641DA0200D16070074105E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				804DF21C1FFAAADD00312051 /* ARTrees.app */,
+				80641D9F200D16070074105E /* Magic 8 Ball.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		804DF21E1FFAAADD00312051 /* ARTrees */ = {
+		80641DA1200D16070074105E /* Magic 8 Ball */ = {
 			isa = PBXGroup;
 			children = (
-				804DF21F1FFAAADD00312051 /* AppDelegate.swift */,
-				804DF2211FFAAADD00312051 /* art.scnassets */,
-				804DF2231FFAAADD00312051 /* ViewController.swift */,
-				804DF2251FFAAADD00312051 /* Main.storyboard */,
-				804DF2281FFAAADD00312051 /* Assets.xcassets */,
-				804DF22A1FFAAADD00312051 /* LaunchScreen.storyboard */,
-				804DF22D1FFAAADD00312051 /* Info.plist */,
+				80641DA2200D16070074105E /* AppDelegate.swift */,
+				80641DA4200D16070074105E /* ViewController.swift */,
+				80641DA6200D16070074105E /* Main.storyboard */,
+				80641DA9200D16070074105E /* Assets.xcassets */,
+				80641DAB200D16070074105E /* LaunchScreen.storyboard */,
+				80641DAE200D16070074105E /* Info.plist */,
 			);
-			path = ARTrees;
+			path = "Magic 8 Ball";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		804DF21B1FFAAADD00312051 /* ARTrees */ = {
+		80641D9E200D16070074105E /* Magic 8 Ball */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 804DF2301FFAAADD00312051 /* Build configuration list for PBXNativeTarget "ARTrees" */;
+			buildConfigurationList = 80641DB1200D16070074105E /* Build configuration list for PBXNativeTarget "Magic 8 Ball" */;
 			buildPhases = (
-				804DF2181FFAAADD00312051 /* Sources */,
-				804DF2191FFAAADD00312051 /* Frameworks */,
-				804DF21A1FFAAADD00312051 /* Resources */,
+				80641D9B200D16070074105E /* Sources */,
+				80641D9C200D16070074105E /* Frameworks */,
+				80641D9D200D16070074105E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARTrees;
-			productName = ARTrees;
-			productReference = 804DF21C1FFAAADD00312051 /* ARTrees.app */;
+			name = "Magic 8 Ball";
+			productName = "Magic 8 Ball";
+			productReference = 80641D9F200D16070074105E /* Magic 8 Ball.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		804DF2141FFAAADC00312051 /* Project object */ = {
+		80641D97200D16070074105E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Addacity;
 				TargetAttributes = {
-					804DF21B1FFAAADD00312051 = {
-						CreatedOnToolsVersion = 9.1;
+					80641D9E200D16070074105E = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 804DF2171FFAAADC00312051 /* Build configuration list for PBXProject "ARTrees" */;
+			buildConfigurationList = 80641D9A200D16070074105E /* Build configuration list for PBXProject "Magic 8 Ball" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 804DF2131FFAAADC00312051;
-			productRefGroup = 804DF21D1FFAAADD00312051 /* Products */;
+			mainGroup = 80641D96200D16070074105E;
+			productRefGroup = 80641DA0200D16070074105E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				804DF21B1FFAAADD00312051 /* ARTrees */,
+				80641D9E200D16070074105E /* Magic 8 Ball */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		804DF21A1FFAAADD00312051 /* Resources */ = {
+		80641D9D200D16070074105E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804DF2221FFAAADD00312051 /* art.scnassets in Resources */,
-				804DF22C1FFAAADD00312051 /* LaunchScreen.storyboard in Resources */,
-				804DF2291FFAAADD00312051 /* Assets.xcassets in Resources */,
-				804DF2271FFAAADD00312051 /* Main.storyboard in Resources */,
+				80641DAD200D16070074105E /* LaunchScreen.storyboard in Resources */,
+				80641DAA200D16070074105E /* Assets.xcassets in Resources */,
+				80641DA8200D16070074105E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		804DF2181FFAAADD00312051 /* Sources */ = {
+		80641D9B200D16070074105E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804DF2241FFAAADD00312051 /* ViewController.swift in Sources */,
-				804DF2201FFAAADD00312051 /* AppDelegate.swift in Sources */,
+				80641DA5200D16070074105E /* ViewController.swift in Sources */,
+				80641DA3200D16070074105E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		804DF2251FFAAADD00312051 /* Main.storyboard */ = {
+		80641DA6200D16070074105E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				804DF2261FFAAADD00312051 /* Base */,
+				80641DA7200D16070074105E /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		804DF22A1FFAAADD00312051 /* LaunchScreen.storyboard */ = {
+		80641DAB200D16070074105E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				804DF22B1FFAAADD00312051 /* Base */,
+				80641DAC200D16070074105E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		804DF22E1FFAAADD00312051 /* Debug */ = {
+		80641DAF200D16070074105E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -215,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -224,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		804DF22F1FFAAADD00312051 /* Release */ = {
+		80641DB0200D16070074105E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -274,60 +270,58 @@
 			};
 			name = Release;
 		};
-		804DF2311FFAAADD00312051 /* Debug */ = {
+		80641DB2200D16070074105E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RZJ9997S5;
-				INFOPLIST_FILE = ARTrees/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				INFOPLIST_FILE = "Magic 8 Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.addacity.ARTrees;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addacity.Magic-8-Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		804DF2321FFAAADD00312051 /* Release */ = {
+		80641DB3200D16070074105E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4RZJ9997S5;
-				INFOPLIST_FILE = ARTrees/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				INFOPLIST_FILE = "Magic 8 Ball/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.addacity.ARTrees;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.addacity.Magic-8-Ball";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		804DF2171FFAAADC00312051 /* Build configuration list for PBXProject "ARTrees" */ = {
+		80641D9A200D16070074105E /* Build configuration list for PBXProject "Magic 8 Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				804DF22E1FFAAADD00312051 /* Debug */,
-				804DF22F1FFAAADD00312051 /* Release */,
+				80641DAF200D16070074105E /* Debug */,
+				80641DB0200D16070074105E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		804DF2301FFAAADD00312051 /* Build configuration list for PBXNativeTarget "ARTrees" */ = {
+		80641DB1200D16070074105E /* Build configuration list for PBXNativeTarget "Magic 8 Ball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				804DF2311FFAAADD00312051 /* Debug */,
-				804DF2321FFAAADD00312051 /* Release */,
+				80641DB2200D16070074105E /* Debug */,
+				80641DB3200D16070074105E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 804DF2141FFAAADC00312051 /* Project object */;
+	rootObject = 80641D97200D16070074105E /* Project object */;
 }
