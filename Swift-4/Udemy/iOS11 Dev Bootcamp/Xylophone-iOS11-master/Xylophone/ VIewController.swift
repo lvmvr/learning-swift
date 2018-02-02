@@ -12,6 +12,8 @@ import AVFoundation
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
     var audioPlayer: AVAudioPlayer!
+    var selectedSoundFileName: String = ""
+    let soundArray = ["note1", "note2", "note3", "note4", "note5", "note6", "note7"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,22 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
 
     @IBAction func notePressed(_ sender: UIButton) {
+        
+        // Understand why we did not fully define what the "selectedSoundFileName" was...
+        // ...It uses the "sender" argument for the Button's IBAction
+        
+        selectedSoundFileName = soundArray[sender.tag - 1]
+        playSound()
+    }
     
-        let soundURL = Bundle.main.url(forResource: "note1", withExtension: "wav")
+    // Define the functionality below...
+    func playSound() {
+        let soundURL = Bundle.main.url(forResource: selectedSoundFileName, withExtension: "wav")
+        
+        // A simple do-catch statement
+        // Do this... if it doesn't work, catch error and do this instead...
+        // Used 'try' since AVAudioPlayer can throw an error (look at documentation)
+        // File may or may not be in source, or type error, extension error, etc...
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: soundURL!)
@@ -32,7 +48,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         audioPlayer.play()
         
     }
-    
   
 
 }
