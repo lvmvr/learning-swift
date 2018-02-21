@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         // Simply establishes boolean values (true/ false) for each UIButton.
         // No "else" statement, since default tag # for all elements is "0"
         // pickedAnswer set to default value of 'false'...
+        
         if sender.tag == 1 {
             pickedAnswer = true
         } else if sender.tag == 2 {
@@ -42,8 +43,6 @@ class ViewController: UIViewController {
         }
         
         checkAnswer()
-        
-        // Next question...
         questionNumber += 1
         nextQuestion()
     }
@@ -59,8 +58,14 @@ class ViewController: UIViewController {
         if questionNumber <= 12 {
             questionLabel.text = allQuestions.list[questionNumber].questionText
         } else {
-            print("End of the quiz!")
-            questionNumber = 0
+            // Restart the quiz
+            let alert = UIAlertController(title: "Awesome Job!", message: "You've successfully completed the quiz, would you like to restart?", preferredStyle: .alert)
+            let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { (UIAlertAction) in
+                self.startOver()
+            })
+            
+            alert.addAction(restartAction)
+            present(alert, animated: true, completion: nil)
         }
     }
     
@@ -78,7 +83,8 @@ class ViewController: UIViewController {
     
     
     func startOver() {
-       
+        questionNumber = 0 // Initiates logic for nextQuestion func...
+        nextQuestion()
     }
     
 
