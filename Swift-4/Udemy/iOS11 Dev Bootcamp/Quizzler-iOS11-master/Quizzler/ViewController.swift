@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     let allQuestions = QuestionBank()
     var pickedAnswer: Bool = false
     var questionNumber: Int = 0
+    var score: Int = 0
     
     
     
@@ -26,8 +27,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Loads initial first question...
-        let firstQuestion = allQuestions.list[0]
-        questionLabel.text = firstQuestion.questionText
+        //let firstQuestion = allQuestions.list[0]
+        // questionLabel.text = firstQuestion.questionText
+        
+        nextQuestion()
     }
 
 
@@ -49,17 +52,27 @@ class ViewController: UIViewController {
     
     
     func updateUI() {
-      
+        scoreLabel.text = "Score: \(score)"
+        progressLabel.text = "\(questionNumber + 1) / 13"
+        
+        // Take full view width divided by number of questions...
+        // ...Then multiply by the value of questionNumber as it increases
+        // Must convert to CGFloat, also add one since it starts at zero
+
+        progressBar.frame.size.width = (view.frame.size.width / 13) * CGFloat(questionNumber + 1)
     }
     
 
     func nextQuestion() {
         
+        // Starts from 1st question...
+        // Add question text and update UI for score and progress labels.
         if questionNumber <= 12 {
             questionLabel.text = allQuestions.list[questionNumber].questionText
+            updateUI()
         } else {
             // Restart the quiz
-            let alert = UIAlertController(title: "Awesome Job!", message: "You've successfully completed the quiz, would you like to restart?", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Awesome Job!", message: "You've scored \(score) points. Would you like to play again?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart", style: .default, handler: { (UIAlertAction) in
                 self.startOver()
             })
@@ -75,15 +88,17 @@ class ViewController: UIViewController {
         let correctAnswer = allQuestions.list[questionNumber].answer
         
         if correctAnswer == pickedAnswer {
-            print("You got it!")
+            ProgressHUD.showSuccess("Correct!")
+            score += 1
         } else {
-            print("Wrong answer!")
+            ProgressHUD.showError("Wrong!")
         }
     }
     
     
     func startOver() {
         questionNumber = 0 // Initiates logic for nextQuestion func...
+        score = 0
         nextQuestion()
     }
     
