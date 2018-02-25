@@ -79,6 +79,8 @@ class ViewController: UIViewController {
             
             alert.addAction(restartAction)
             present(alert, animated: true, completion: nil)
+            // Update UI before restarting game.
+            updateUI()
         }
     }
     
