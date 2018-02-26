@@ -35,7 +35,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         // A simple do-catch statement
         // Do this... if it doesn't work, catch error and do this instead...
-        // Used 'try' since AVAudioPlayer can throw an error (look at source code)
+        // Used 'try' since AVAudioPlayer can throw an error (look at documentation)
         // File may or may not be in source, or type error, extension error, etc...
         
         do {
