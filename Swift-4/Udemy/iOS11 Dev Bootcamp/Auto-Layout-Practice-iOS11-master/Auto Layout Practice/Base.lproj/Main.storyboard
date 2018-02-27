@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="334" width="375" height="333"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notebook" translatesAutoresizingMaskIntoConstraints="NO" id="ax9-Zq-rU0">
-                                        <rect key="frame" x="67" y="102.5" width="240" height="128"/>
+                                        <rect key="frame" x="67.5" y="102.5" width="240" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="Nx9-r9-OvJ"/>
                                             <constraint firstAttribute="width" constant="240" id="o4Q-hS-mjF"/>
@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="artBoard" translatesAutoresizingMaskIntoConstraints="NO" id="OTn-BU-1E3">
-                                        <rect key="frame" x="67" y="102" width="240" height="128"/>
+                                        <rect key="frame" x="67.5" y="102.5" width="240" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="RPg-dN-lur"/>
                                             <constraint firstAttribute="width" constant="240" id="yy1-Sw-CrJ"/>
