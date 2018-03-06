@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Destini" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="yQM-QA-6My">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPp-L7-KqX" userLabel="Story Text View">
+                                <rect key="frame" x="16" y="20" width="343" height="487"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx9-0z-2Od">
+                                <rect key="frame" x="32" y="515" width="311" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wbh-3P-dvM"/>
+                                </constraints>
+                                <state key="normal" title="Top Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KaF-21-ZIQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laV-Dh-Iof" userLabel="Bottom Button">
+                                <rect key="frame" x="32" y="599" width="311" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="N0Q-7N-TVk"/>
+                                </constraints>
+                                <state key="normal" title="Bottom button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="arB-Yn-iNZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gPp-L7-KqX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="1sg-T7-yQg"/>
+                            <constraint firstItem="yQM-QA-6My" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8Kw-JT-H4G"/>
+                            <constraint firstItem="Xx9-0z-2Od" firstAttribute="top" secondItem="gPp-L7-KqX" secondAttribute="bottom" constant="8" id="CZ6-9Q-G0s"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="laV-Dh-Iof" secondAttribute="bottom" constant="18" id="HSZ-8b-Sar"/>
+                            <constraint firstAttribute="trailing" secondItem="yQM-QA-6My" secondAttribute="trailing" id="NXO-R8-MSC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gPp-L7-KqX" secondAttribute="trailing" id="PWw-Ed-PIU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="laV-Dh-Iof" secondAttribute="trailing" constant="16" id="UpQ-II-D6d"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yQM-QA-6My" secondAttribute="bottom" id="Vq5-BT-LHd"/>
+                            <constraint firstItem="Xx9-0z-2Od" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="WFz-EI-Ulv"/>
+                            <constraint firstItem="laV-Dh-Iof" firstAttribute="top" secondItem="Xx9-0z-2Od" secondAttribute="bottom" constant="34" id="WUi-aK-2yX"/>
+                            <constraint firstItem="yQM-QA-6My" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="bvl-8k-WeE"/>
+                            <constraint firstItem="gPp-L7-KqX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lzm-Yg-OuR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xx9-0z-2Od" secondAttribute="trailing" constant="16" id="o4g-AI-wHb"/>
+                            <constraint firstItem="laV-Dh-Iof" firstAttribute="top" secondItem="Xx9-0z-2Od" secondAttribute="bottom" constant="34" id="oaJ-kM-Sh5"/>
+                            <constraint firstItem="laV-Dh-Iof" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="qNB-VC-H4y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="laV-Dh-Iof" id="ChO-04-GDy"/>
+                        <outlet property="storyTextView" destination="gPp-L7-KqX" id="9mJ-Gl-kvd"/>
+                        <outlet property="topButton" destination="Xx9-0z-2Od" id="tsz-j3-WiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="319"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="505" height="944"/>
+    </resources>
+</document>
