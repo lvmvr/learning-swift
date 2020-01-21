@@ -18,8 +18,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func keyPressed(_ sender: UIButton) {
+        
+        // Play the sound file based on the title of the track
         playSound(soundName: sender.currentTitle!)
+        
+        // Dim button to half opacity when pressed
+        sender.alpha = 0.5
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            //Bring's sender's opacity back up to fully opaque.
+            sender.alpha = 1.0
+        }
+        
     }
+    
+
     
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
