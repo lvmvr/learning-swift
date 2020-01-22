@@ -11,27 +11,39 @@ import UIKit
 class ViewController: UIViewController {
     
     
-
+    var seconds = 0
+    var timer = Timer()
+    let eggTimes = [
+        "Soft": 3,
+        "Medium": 4,
+        "Hard": 7
+    ]
     
-    var timer = 0
+    @IBOutlet weak var updateLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
     
     
     @IBAction func hardnessSelected(_ sender: UIButton) {
-        let eggTimes = [
-            "Soft": 300,
-            "Medium": 420,
-            "Hard": 720
-        ]
-        timer = eggTimes[sender.titleLabel!.text!]!
+        // Start timer with hard reset
+        timer.invalidate()
+        progressBar.progress = 1
         
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        
+        // Pulls from dictionary above for seconds
+        seconds = eggTimes[sender.titleLabel!.text!]!
+        
+        // Creates a new timer interval after it was invalidated
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
     
+    // uses @objc since "#selector" is being used from obj-c syntax
     @objc func updateCounter() {
-        //example functionality
-        if timer > 0 {
-            print("\(timer) seconds until your eggs are done.")
-            timer -= 1
+        if seconds > 0 {
+            print("\(seconds) seconds until your eggs are done.")
+            seconds -= 1 // Countdown
+        } else {
+            timer.invalidate()
+            updateLabel.text = "DONE!"
         }
     }
 }
